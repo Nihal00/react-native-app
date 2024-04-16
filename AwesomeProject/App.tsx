@@ -11,6 +11,9 @@ const App = () => {
         <FlatCard />
         <ElevatedCards />
         <FancyCard />
+        <FancyCard />
+        <FancyCard />
+        <FancyCard />
       </ScrollView>
     </SafeAreaView>
   );
