@@ -27,7 +27,7 @@ export default function ActionCard() {
             uri: 'https://img.freepik.com/free-photo/online-message-blog-chat-communication-envelop-graphic-icon-concept_53876-139717.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1713139200&semt=sph',
           }}
           style={styles.cardImage}
-        />
+      />
         <View style={styles.bodyContainer}>
           <Text numberOfLines={2}>
             Just like every year, Javascript brings in new feature. This year

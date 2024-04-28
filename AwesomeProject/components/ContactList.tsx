@@ -40,8 +40,10 @@ export default function ContactList() {
               }}
               style={styles.userImage}
             />
-            <Text style={styles.userName}>{name}</Text>
-            <Text style={styles.userStatus}>{status}</Text>
+            <View>
+              <Text style={styles.userName}>{name}</Text>
+              <Text style={styles.userStatus}>{status}</Text>
+            </View>
           </View>
         ))}
       </ScrollView>
@@ -50,14 +52,36 @@ export default function ContactList() {
 }
 
 const styles = StyleSheet.create({
-  headingText: {},
-  container: {},
-  useCard: {},
+  headingText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
+  },
+  container: {
+    paddingHorizontal: 16,
+    marginBottom: 4,
+  },
+  useCard: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 4,
+    backgroundColor: '#45CE30',
+    padding: 8,
+    borderRadius: 10,
+  },
   userImage: {
     height: 60,
     width: 60,
     borderRadius: 60 / 2,
+    marginRight: 14,
   },
-  userName: {},
-  userStatus: {},
+  userName: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#FFF',
+  },
+  userStatus: {
+    fontSize: 12,
+  },
 });
